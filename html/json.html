@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>JSON</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicons -->
+  <link href="../img/numero6.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/monokai-sublime.min.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Imperial - v5.9.1
+  * Template URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo mr-auto"><img src="../img/ajax.png" alt=""></a>
+      <!-- Uncomment below if you prefer to use a text logo -->
+      <!-- <h1 class="logo mr-auto"><a href="index.html">Imperial</a></h1> -->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="../index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#aboutNosotros">Introduccion</a></li>
+          <li><a class="nav-link scrollto" href="#dom">Ejemplo</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <ol>
+            <li><a href="../index.html#services">Home</a></li>
+            <li>JSON</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= About Section ======= -->
+    <section id="aboutNosotros">
+      <div class="container about-container" data-aos="fade-up" data-aos-delay="300">
+        <div class="row">
+          <h1 class="text-center">JSON</h1>
+          <div class="section-title-divider"></div>
+          <div class="col-sm-12 col-md-12 col-lg-12 about-content">
+            <h2 class="aboutNosotros-title">Concepto</h2>
+            <p class="aboutNosotros-text">JSON es un formato de archivo que utiliza texto legible por humanos para almacenar y transmitir objetos de datos que contienen matrices y pares de atributos y valores. JSON se utiliza para almacenar información de manera organizada y de fácil acceso. JSON significa Notación de objetos de JavaScript. Ofrece una colección de datos legibles por humanos a los que se puede acceder lógicamente.
+            </p>
+            <div class="card syntax">
+              <div class="card-header syntax-title">
+                Ejemplo JSON:
+              </div>
+              <div class="card-body bg-white">
+                <pre>'{"name":"John", "age":30, "car":null}'</pre>
+              </div>
+            </div>
+            <br>
+            <h5>Características de JSON</h5>
+            <ul>
+              <li>Fácil de usar : la API JSON ofrece una fachada de alto nivel, lo que lo ayuda a simplificar los casos de uso más comunes.</li>
+              <li>Rendimiento : JSON es bastante rápido ya que consume mucho menos espacio de memoria, lo que es especialmente adecuado para sistemas o gráficos de objetos grandes.</li>
+              <li>Herramienta gratuita : la biblioteca JSON es de código abierto y de uso gratuito.</li>
+              <li>JSON limpio : crea un resultado JSON limpio y compatible que es fácil de leer.</li>
+              <li>Los datos están en pares de nombre/valor</li>
+            </ul>
+          </div>
+        </div>
+        <br>
+      </div>
+    </section><!-- End About Section -->
+
+    <section id="dom">
+      <div class="container about-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+          <h2 class="titulo">Ejemplo</h2>
+          <p>El siguiente ejemplo muestra cómo crear un objeto y acceder a un objeto JavaScript como este: </p>
+          <div class="col-md-6 about-content">
+            <h2 class="titulo">Codigo</h2>
+            <pre><code class="html">
+&#60;!DOCTYPE html&#62;
+&#60;html&#62;
+&#60;body&#62;
+
+&#60;h2&#62;Access a JavaScript object&#60;/h2&#62;
+&#60;p id="demo"&#62;&#60;/p&#62;
+&#60;button onclick="myFunction()"&#62;Pruebalo&#60;/button&#62;
+&#60;script&#62;
+function myFunction() {
+const myObj = {name:"John", age:30, city:"New York"};
+document.getElementById("demo").innerHTML = myObj.name +","+myObj.age+","+myObj.city;
+}
+&#60;/script&#62;
+
+&#60;/body&#62;
+&#60;/html&#62;
+
+            </code></pre>
+
+          </div>
+          <div class="col-lg-6 about-img" data-aos="fade-right" data-aos-delay="400">
+            <h2 class="titulo">Ejecución</h2>
+            <script>
+            function myFunction() {
+            const myObj = {name:"John", age:30, city:"New York"};
+            document.getElementById("demo").innerHTML = myObj.name +","+myObj.age+","+myObj.city;
+            }
+            </script>
+            <p>Haga clic en el botón para ejecutar el codigo</p>
+            <p id="demo"></p>
+            <button onclick="myFunction()">Pruebalo</button>
+
+            <br><br>
+            <p class="about-text"></p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <section id="about">
+      <div class="container about-container" data-aos="fade-up" data-aos-delay="300">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 about-content">
+            <h2 class="titulo">JSON .parse()</h2>
+            <p class="about-text">
+              Un uso común de JSON es intercambiar datos hacia/desde un servidor web. Al recibir datos de un servidor web, los datos siempre son una cadena. Analice los datos con JSON.parse(), y los datos se convierten en un objeto de JavaScript. Cuando se usa JSON.parse()en un JSON derivado de una matriz, el método devolverá una matriz de JavaScript, en lugar de un objeto de JavaScript.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <section id="dom">
+      <div class="container about-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+          <h2 class="titulo">Ejemplo</h2>
+          <p>Los objetos de fecha no están permitidos en JSON.El siguiente ejemplo muestra cómo convierte una cadena en una fecha:</p>
+          <div class="col-md-6 about-content">
+            <h2 class="titulo">Codigo</h2>
+            <pre><code class="html">
+&#60;!DOCTYPE html&#62;
+&#60;html&#62;
+&#60;body&#62;
+
+&#60;h2&#62;Convierta una cadena en un objeto de fecha.&#60;/h2&#62;
+&#60;p id="demo2"&#62;&#60;/p&#62;
+&#60;button onclick="fecha()"&#62;Pruebalo&#60;/button&#62;
+&#60;script&#62;
+function fecha(){
+const text = '{"name":"John", "birth":"2023-01-03", "city":"New York"}';
+const obj = JSON.parse(text);
+obj.birth = new Date(obj.birth);
+document.getElementById("demo2").innerHTML = obj.name + ", " + obj.birth; 
+}
+&#60;/script&#62;
+
+&#60;/body&#62;
+&#60;/html&#62;
+            </code></pre>
+
+          </div>
+          <div class="col-lg-6 about-img" data-aos="fade-right" data-aos-delay="400">
+            <h2 class="titulo">Ejecución</h2>
+            <script>
+            function fecha(){
+            const text = '{"name":"John", "birth":"2023-01-03", "city":"New York"}';
+            const obj = JSON.parse(text);
+            obj.birth = new Date(obj.birth);
+            document.getElementById("demo2").innerHTML = obj.name + ", " + obj.birth; 
+            }
+            </script>
+            <p>Haga clic en el botón para ejecutar el codigo</p>
+            <p id="demo2"></p>
+            <button onclick="fecha()">Pruebalo</button>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            &copy; Copyright <strong>Grupo 06</strong>. All Rights Reserved <br>Nombre: Bryan Azuero NRC: 844
+          </div>
+          <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+          -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/typed.js/typed.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../js/highlight.min.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((el) => {
+      hljs.highlightElement(el);
+    });
+  });
+  </script>
+  <script src="../js/jquery.xdomainajax.js"></script>
+</body>
+
+</html>

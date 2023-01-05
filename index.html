@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>JQuery AJAX</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicons -->
+  <link href="img/numero6.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- =======================================================
+  * Template Name: Imperial - v5.9.1
+  * Template URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo mr-auto"><img src="img/logo.png" alt=""></a>
+      <!-- Uncomment below if you prefer to use a text logo -->
+      <!-- <h1 class="logo mr-auto"><a href="index.html">Imperial</a></h1> -->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Introducción</a></li>
+          <li><a class="nav-link scrollto" href="#services">Formas de almacenamiento</a></li>
+          <li><a class="nav-link scrollto " href="#subscribe">AJAX Avanzado</a></li>
+          <li><a class="nav-link scrollto " href="#dif">Diferencias</a></li>
+          <li><a class="nav-link scrollto " href="#sem">Semejanzas</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">JQUERY AJAX</h3>
+            <div class="section-title-divider"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container about-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+
+          <div class="col-lg-6 about-img" data-aos="fade-left" data-aos-delay="400">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="img/jquery.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/almacenamiento.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/modelo.jpg" alt="">
+                
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/JSON_vs.jpg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-md-6 about-content">
+            <h2 class="about-title">Te gustaria aprender?</h2>
+            <p class="about-text">
+              AJAX es el acrónimo de Asynchronous JavaScript and XML (JavaScript asíncrono y XML). Es un grupo de tecnologías interrelacionadas como JavaScript, DOM, XML, HTML/XHTML, CSS, XMLHttpRequest, etc. Nos permite enviar y recibir datos de forma asíncrona sin recargar la página web. Por lo tanto, es rápido.
+            </p>
+            <a href="html/introduccion.html" class="btn btn-outline-secondary header-btn btn-lg mt-2">Introdución!</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+      <div class="container">
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-12">
+            <h3 class="section-title">Formas de almacenar datos</h3>
+            <div class="section-title-divider"></div>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 col-md-6 service-item">
+            <div class="service-icon"><i class="bi bi-card-list"></i></div>
+            <h4 class="service-title"><a href="metodos.html">XML</a></h4>
+            <p class="service-description">XML es una herramienta independiente de software y hardware para almacenar y transportar datos.</p>
+            <div class="text-center">
+              <a href="html/xml.html" class="btn btn-outline-secondary btn-lg ">Leer Mas!</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 service-item">
+            <div class="service-icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="service-title"><a href="documentos.html">JSON</a></h4>
+            <p class="service-description">Es una formatación usada para estructurar datos en forma de texto y transmitirlos de un sistema a otro</p>
+            <div class="text-center">
+              <a href="html/json.html" class="btn btn-outline-secondary btn-lg ">Leer Mas!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Subscrbe Section ======= -->
+    <section id="subscribe">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-8">
+            <h3 class="subscribe-title">JQUERY AJAX AVANZADO</h3>
+            <p class="subscribe-text">Unete a nosotros y obtenga acceso a nueva informacion, ejemplos, metodos, etc. Tendrá secciones como uso avanzado de selectores, manejo de eventos, utilizacion de plugins y bibliotecas externas, optimizacion y rendimiento</p>
+          </div>
+          <div class="col-md-4 subscribe-btn-container">
+            <a class="subscribe-btn" href="#" onclick="javascipt:return false;">Proximamente</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Subscrbe Section -->
+  </main><!-- End #main -->
+<br><br>
+    <!-- ======= Portfolio Section ======= -->
+    <section id="dif">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Diferencias entre JSON y XML</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description"></p>
+          </div>
+          <section id="diferencia">
+      <div class="container about-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+          <h2 class="titulo"></h2>
+          <div class="col-lg-12 about-content">
+            <table class="table table-striped table-hover text-center" align="content">
+<tr>
+              <th><strong>JSON</strong></th>
+              <th><strong>XML</strong></th>
+              </tr>
+              <tr>
+              <td>El objeto JSON tiene un tipo</td>
+              <td>Los datos XML no tienen tipo</td>
+              </tr>
+              <tr>
+              <td>Tipos JSON: cadena, número, matriz, booleano</td>
+              <td>Todos los datos XML deben ser cadenas</td>
+              </tr>
+              <tr>
+              <td>Los datos son fácilmente accesibles como objetos JSON</td>
+              <td>Los datos XML deben analizarse.</td>
+              </tr>
+              <tr>
+              <td>JSON es compatible con la mayoría de los navegadores.</td>
+              <td>El análisis XML entre navegadores puede ser complicado</td>
+              </tr>
+              <tr>
+              <td>Recuperar valor es fácil</td>
+              <td>Recuperar valor es difícil</td>
+              </tr>
+              <tr>
+              <tr>
+              <td>Soporte nativo para objeto.</td>
+              <td>El objeto tiene que ser expresado por convenciones &#8211; en su mayoría perdió el uso de atributos y elementos.</td>
+              </tr>
+              <tr>
+              <td>Solo admite la codificación UTF-8.</td>
+              <td>Admite varias codificaciones.</td>
+              </tr>
+              <tr>
+              <td>Los archivos JSON son fáciles de leer en comparación con XML.</td>
+              <td>Los documentos XML son relativamente más difíciles de leer e interpretar.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+<br><br>
+<section id="sem">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Semejanzas entre JSON y XML</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description"></p>
+          </div>
+          <section id="semejaza">
+      <div class="container about-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+          <h2 class="titulo"></h2>
+          <div class="col-lg-12 about-content">
+            <table class="table table-striped table-hover text-center" align="content">
+                <tr>
+                  <th class="text-center">JSON</th>
+                  <th class="text-center">XML</th>
+                </tr>
+                <tr>
+                  <td>JSON es de lectura automática.</td>
+                  <td>XML es de lectura automática.</td>
+                </tr>
+                <tr>
+                  <td>JSON pueden obtener con XMLHttpRequest.</td>
+                  <td>XML pueden obtener con XMLHttpRequest.</td>
+                </tr>
+                <tr>
+                  <td>JSON es de tipo jerarquico</td>
+                  <td>XML es de tipo jerarquico</td>
+                </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            &copy; Copyright <strong>Grupo 06</strong>. All Rights Reserved <br>Nombre: Bryan Azuero NRC: 8444
+          </div>
+          <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+          -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
